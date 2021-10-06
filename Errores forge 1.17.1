@@ -1,0 +1,591 @@
+
+C:\Users\.....\Desktop\Westerkaka>java @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.17.1-37.0.70/win_args.txt
+2021-10-06 18:21:18,633 main WARN Advanced terminal features are not available in this environment
+[18:21:18] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 37.0.70, --fml.mcVersion, 1.17.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20210706.113038]
+[18:21:18] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 9.0.7+91+master.8569cdf starting: java version 16.0.2 by Oracle Corporation
+[18:21:19] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=union:/C:/Users/Chitur/Desktop/Westerkaka/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar%2318! Service=ModLauncher Env=SERVER
+[18:21:22] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+[18:21:29] [main/ERROR] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Error occurred applying transform of coremod coremods/field_to_method.js function bucketitem
+java.lang.IllegalStateException: Field f_40687_ is not private and an instance field
+        at net.minecraftforge.coremod.api.ASMAPI.redirectFieldToMethod(ASMAPI.java:260) ~[coremods-5.0.1.jar%234!:?] {}
+        at org.openjdk.nashorn.internal.scripts.Script$Recompilation$16$1097A$\^eval\_.initializeCoreMod#transformer-1(<eval>:33) ~[?:?] {}
+        at org.openjdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:648) ~[nashorn-core-15.3.jar%2319!:?] {}
+        at org.openjdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:513) ~[nashorn-core-15.3.jar%2319!:?] {}
+        at org.openjdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:520) ~[nashorn-core-15.3.jar%2319!:?] {}
+        at org.openjdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:111) ~[nashorn-core-15.3.jar%2319!:?] {}
+        at net.minecraftforge.coremod.NashornFactory.lambda$getFunction$0(NashornFactory.java:18) ~[coremods-5.0.1.jar%234!:5.0.1+15+master.dc5a2922] {}
+        at net.minecraftforge.coremod.transformer.CoreModClassTransformer.runCoremod(CoreModClassTransformer.java:18) ~[coremods-5.0.1.jar%234!:?] {}
+        at net.minecraftforge.coremod.transformer.CoreModClassTransformer.runCoremod(CoreModClassTransformer.java:10) ~[coremods-5.0.1.jar%234!:?] {}
+        at net.minecraftforge.coremod.transformer.CoreModBaseTransformer.transform(CoreModBaseTransformer.java:38) ~[coremods-5.0.1.jar%234!:?] {}
+        at cpw.mods.modlauncher.TransformerHolder.transform(TransformerHolder.java:41) ~[modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.ClassTransformer.performVote(ClassTransformer.java:179) ~[modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:117) ~[modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:110) ~[securejarhandler-0.9.46.jar:?] {}
+        at cpw.mods.cl.ModuleClassLoader.lambda$findClass$16(ModuleClassLoader.java:213) ~[securejarhandler-0.9.46.jar:?] {}
+        at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:223) ~[securejarhandler-0.9.46.jar:?] {}
+        at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:213) ~[securejarhandler-0.9.46.jar:?] {}
+        at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:130) ~[securejarhandler-0.9.46.jar:?] {}
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?] {}
+        at net.minecraft.core.Registry.m_175449_(Registry.java:178) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?] {re:classloading}
+        at net.minecraft.core.Registry.lambda$static$60(Registry.java:512) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?] {re:classloading}
+        at java.util.LinkedHashMap.forEach(LinkedHashMap.java:723) ~[?:?] {}
+        at net.minecraft.core.Registry.<clinit>(Registry.java:511) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?] {re:classloading}
+        at net.minecraft.server.Bootstrap.m_135870_(Bootstrap.java:39) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?] {re:classloading}
+        at net.minecraft.server.Main.main(Main.java:97) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?] {re:classloading}
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?] {}
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+        at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?] {}
+        at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:46) ~[fmlloader-1.17.1-37.0.70.jar%2322!:?] {}
+        at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.0.7.jar%235!:?] {}
+        at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:90) [bootstraplauncher-0.1.17.jar:?] {}
+[18:21:32] [modloading-worker-3/INFO]: loading json file and contents for paintings.
+[18:21:32] [modloading-worker-3/INFO]: Copying Over Base Template to /paintings
+[18:21:32] [modloading-worker-3/WARN]: ************************************
+[18:21:32] [modloading-worker-3/WARN]: !*!*!*!*!
+[18:21:32] [modloading-worker-3/ERROR]: A fatal error occurred reading the resource pack directory
+[18:21:32] [modloading-worker-3/ERROR]: SKIPPING ENTIRE PROCESS
+[18:21:32] [modloading-worker-3/WARN]: !*!*!*!*!
+[18:21:32] [modloading-worker-3/WARN]: ************************************
+[18:21:32] [modloading-worker-3/WARN]: java.nio.file.NoSuchFileException: .\resourcepacks
+[18:21:32] [modloading-worker-3/INFO]: Started Reading all json files in /painting directory
+[18:21:32] [modloading-worker-3/INFO]: .\paintings\paintings.json
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting abstract_blue , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting abstract_rainbow , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting abstract_red , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting abstract_sunset , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting arachnophobe , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting barn_owl , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting big_z , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting blue_bird , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting bluesclues , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting borgia , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting cane , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting cat_black , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting cat_gray , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting cat_orange , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting cat , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting colorful_squares , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting crest , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting danger_zone , 32 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting decorative_gun , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting exit_down , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting exit_up , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting exit_left , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting exit_right , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_bat , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_chicken , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_cow , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_creeper , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_dog , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_enderman , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_pig , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_pigman , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_silverfish , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_skeleton , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_squid , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting face_zombie , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting fishes , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting flowers , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting fruits , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting ghost , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting glowlamp , 32 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting glowstone_hourglass , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting iluvmc , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting link , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting mine_prosperity , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting no_trespassing_for_mobs , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting ocelot , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting penguin , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting pig_on_a_cliff , 32 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting pkmn_blue , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting pkmn_red , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting pkmn_green , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting plains_hut , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting portrait_2 , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting portrait , 32 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting prison , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting prosperity , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting rest , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting skeleton , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting sky , 32 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting skyblock , 32 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting snake , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting snow_landscape , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting subaraki , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting synth_city , 16 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting tapistry_a , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting tapistry_b , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting tapistry_purple , 16 x 32
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting torched , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting waterfall , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting whale , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting wheat_field , 32 x 16
+[18:21:32] [modloading-worker-3/INFO]: Loaded json painting wolf_in_wheat , 32 x 16
+[18:21:32] [modloading-worker-2/INFO]: Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
+[18:21:32] [modloading-worker-2/INFO]: Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
+[18:21:32] [modloading-worker-2/INFO]: Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
+[18:21:32] [modloading-worker-2/INFO]: Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
+[18:21:33] [modloading-worker-2/INFO]: Registered plugin provider JEITransferHandlerPlugin [roughlyenoughitems] for REIServerPlugin
+[18:21:33] [modloading-worker-2/INFO]: Registered plugin provider JEITransferHandlerPlugin [roughlyenoughitems] for REIPlugin
+[18:21:33] [modloading-worker-2/INFO]: Forge mod loading, version 37.0.70, for MC 1.17.1 with MCP 20210706.113038
+[18:21:33] [modloading-worker-2/INFO]: MinecraftForge v37.0.70 Initialized
+[18:21:38] [modloading-worker-5/INFO]: HELLO FROM PREINIT
+[18:21:39] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [voicechat] Starting version check at https://maxhenkel.de/update/voicechat.json
+[18:21:39] [main/INFO]: Initializing Packet Registries
+[18:21:39] [modloading-worker-6/INFO]: Loading Xaero's Minimap - Stage 1/2 (Server)
+[18:21:39] [main/INFO]: Loading Xaero's Minimap - Stage 2/2 (Server)
+[18:21:39] [modloading-worker-7/INFO]: Got IMC []
+[18:21:39] [modloading-worker-5/INFO]: Applying mega torch entity block list overrides...
+[18:21:39] [modloading-worker-5/INFO]: Applying dread lamp entity block list overrides...
+[18:21:39] [modloading-worker-1/INFO]: 117 pillars from minecraft
+[18:21:39] [modloading-worker-1/INFO]: Total of pillars : 117 (x2)
+[18:21:39] [modloading-worker-2/INFO]: Registered plugin at mcp.mobius.waila.addons.core.CorePlugin
+[18:21:39] [modloading-worker-2/INFO]: Registered plugin at snownee.jade.VanillaPlugin
+[18:21:39] [modloading-worker-2/INFO]: Registered plugin at net.geforcemods.securitycraft.compat.waila.WailaDataProvider
+[18:21:41] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [voicechat] Found status: UP_TO_DATE Current: 1.17.1-1.0.6 Target: null
+[18:21:41] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [dungeonsmod] Starting version check at https://raw.githubusercontent.com/dainxt/DungeonsMod-Issue-Tracker/master/update.json
+[18:21:42] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [dungeonsmod] Found status: BETA Current: 1.17.1-1.4.53 Target: null
+[18:21:42] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [gravestone] Starting version check at https://maxhenkel.de/update/gravestone.json
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [gravestone] Found status: OUTDATED Current: 1.17.1-1.0.0 Target: 1.17.1-1.0.4
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [weaponthrow] Starting version check at https://raw.githubusercontent.com/dainxt/WeaponThrow/main/update.json
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [weaponthrow] Found status: BETA Current: 1.17.1-5.0 Target: null
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [securitycraft] Starting version check at https://www.github.com/Geforce132/SecurityCraft/raw/master/Updates/Forge.json
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [securitycraft] Found status: AHEAD Current: 1.8.23-beta5 Target: null
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [mcwdoors] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/doors.json
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [mcwdoors] Found status: OUTDATED Current: 1.0.3 Target: 1.0.4
+[18:21:44] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [cfm] Starting version check at https://mrcrayfish.com/modupdatejson?id=cfm
+[18:21:45] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [cfm] Found status: BETA Current: 7.0.0-pre25 Target: 7.0.0-pre25
+[18:21:45] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[18:21:45] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: BETA_OUTDATED Current: 37.0.70 Target: 37.0.82
+[18:21:45] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [simpletomb] Starting version check at https://raw.githubusercontent.com/Lothrazar/SimpleTomb/trunk/1.17/update.json
+[18:21:46] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [simpletomb] Found status: AHEAD Current: 1.17.1-1.0.9 Target: null
+[18:21:46] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [corail_pillar] Starting version check at https://raw.githubusercontent.com/Corail31/trash/master/update_pillar.json
+[18:21:46] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [corail_pillar] Found status: UP_TO_DATE Current: 5.3.0 Target: null
+[18:21:48] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[18:21:48] [main/WARN]: Assets URL 'union:/C:/Users/Chitur/Desktop/Westerkaka/libraries/net/minecraft/server/1.17.1-20210706.113038/server-1.17.1-20210706.113038-srg.jar%2356!/assets/.mcassetsroot' uses unexpected schema
+[18:21:48] [main/WARN]: Assets URL 'union:/C:/Users/Chitur/Desktop/Westerkaka/libraries/net/minecraft/server/1.17.1-20210706.113038/server-1.17.1-20210706.113038-srg.jar%2356!/data/.mcassetsroot' uses unexpected schema
+[18:21:49] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:21:49] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:21:49] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[18:21:49] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[18:21:49] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:21:49] [main/WARN]: Ambiguity between arguments [waypoint, create, name, dimension, location, color, announce] and [waypoint, create, name, dimension, location, color, player] with inputs: [true, false]
+[18:21:49] [main/WARN]: Ambiguity between arguments [waypoint, delete, name, announce] and [waypoint, delete, name, player] with inputs: [true, false]
+[18:21:49] [main/INFO]: Reloading ResourceManager: Default, RandomDecorativeThings-1.17.1-0.1.2.jar, simplylight-1.17.1-1.0.1-build.9.jar, RoughlyEnoughItems-6.0.279-alpha-forge.jar, cloth-config-5.0.38-forge.jar, paintings-1.17.1-8.0.0.1.jar, Jade-1.17.1-3.1.4.jar, forge-1.17.1-37.0.70-universal.jar, Xaeros_Minimap_21.15.1.1_Forge_1.17.1.jar, gravestone-1.17.1-1.0.1.jar, cfm-7.0.0pre25-1.17.1.jar, architectury-2.5.27-forge.jar, jumpoverfences-1.17.1-1.0.1.jar, vanillaplustools-1.17.1-1.2.jar, BiomesOPlenty-1.17.1-14.0.0.36-universal.jar, mcw-doors-1.0.3-mc1.17.1.jar, appleskin-forge-mc1.17.1-2.1.0.jar, LavaClearView-1.17.1-2.0.0.jar, comforts-forge-1.17.1-5.0.0.1.jar, DungeonsMod-1.17.1-1.4.53.jar, ShoulderSurfing-1.17.1-2.2.1.jar, PackingTape-1.17.1-0.11.1.jar, corail_pillar-1.17.1-5.3.0.jar, journeymap-1.17.1-5.7.3rc3.jar, torchmaster-3.0.1-beta.jar, voicechat-forge-1.17.1-1.0.6.jar, AmbientSounds_v4.0.1_mc1.17.1.jar, CreativeCore_v2.3.0_mc1.17.1.jar, WeaponThrow-1.17.1-5.0.jar, [1.17.1]+SecurityCraft+v1.8.23-beta5.jar, [1.17.1]-Epic-Knights-Armor-and-Weapons-2.12v.jar, simpletomb-1.17.1-1.0.9.jar, PlayerRevive_v2.0.0-pre04_mc1.17.1.jar
+[18:21:54] [Worker-Main-8/ERROR]: Couldn't parse data file magistuarmory:silver_estoc from magistuarmory:recipes/silver_estoc.json
+com.google.gson.JsonParseException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 18 column 5 path $.result
+        at net.minecraft.util.GsonHelper.m_13780_(SourceFile:495) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.util.GsonHelper.m_13776_(SourceFile:532) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener.m_5944_(SimpleJsonResourceReloadListener.java:52) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener.m_5944_(SimpleJsonResourceReloadListener.java:20) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10786_(SourceFile:11) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756) [?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at line 18 column 5 path $.result
+        at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559) ~[gson-2.8.0.jar%2321!:?]
+        at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:491) ~[gson-2.8.0.jar%2321!:?]
+        at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:414) ~[gson-2.8.0.jar%2321!:?]
+        at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:738) ~[gson-2.8.0.jar%2321!:?]
+        at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:714) ~[gson-2.8.0.jar%2321!:?]
+        at com.google.gson.internal.bind.TypeAdapters$35$1.read(TypeAdapters.java:910) ~[gson-2.8.0.jar%2321!:?]
+        at net.minecraft.util.GsonHelper.m_13780_(SourceFile:493) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        ... 11 more
+[18:21:55] [Worker-Main-14/ERROR]: Parsing error loading recipe magistuarmory:maximilian_leggings
+com.google.gson.JsonSyntaxException: Invalid key entry: '' is an invalid symbol (must be 1 character only).
+        at net.minecraft.world.item.crafting.ShapedRecipe.m_44210_(ShapedRecipe.java:255) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:289) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_44045_(RecipeManager.java:143) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:59) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:36) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SourceFile:13) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2143) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_10855_(SourceFile:53) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_6769_(SourceFile:50) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146) [?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1769) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756) [?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+[18:21:55] [Worker-Main-14/ERROR]: Parsing error loading recipe magistuarmory:maximilian_boots
+com.google.gson.JsonSyntaxException: Invalid key entry: '' is an invalid symbol (must be 1 character only).
+        at net.minecraft.world.item.crafting.ShapedRecipe.m_44210_(ShapedRecipe.java:255) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:289) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_44045_(RecipeManager.java:143) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:59) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:36) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SourceFile:13) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2143) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_10855_(SourceFile:53) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_6769_(SourceFile:50) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146) [?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1769) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756) [?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+[18:21:55] [Worker-Main-14/ERROR]: Parsing error loading recipe magistuarmory:maximilian_helmet
+com.google.gson.JsonSyntaxException: Invalid key entry: '' is an invalid symbol (must be 1 character only).
+        at net.minecraft.world.item.crafting.ShapedRecipe.m_44210_(ShapedRecipe.java:255) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:289) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_44045_(RecipeManager.java:143) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:59) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:36) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SourceFile:13) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2143) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_10855_(SourceFile:53) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_6769_(SourceFile:50) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146) [?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1769) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756) [?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+[18:21:55] [Worker-Main-14/ERROR]: Parsing error loading recipe magistuarmory:maximilian_chestplate
+com.google.gson.JsonSyntaxException: Invalid key entry: '' is an invalid symbol (must be 1 character only).
+        at net.minecraft.world.item.crafting.ShapedRecipe.m_44210_(ShapedRecipe.java:255) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:289) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_44045_(RecipeManager.java:143) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:59) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:36) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SourceFile:13) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SourceFile:71) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SourceFile:70) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2143) ~[?:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_10855_(SourceFile:53) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at net.minecraft.server.packs.resources.SimpleReloadInstance$1.m_6769_(SourceFile:50) ~[server-1.17.1-20210706.113038-srg.jar%2356!:?]
+        at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146) [?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1769) [?:?]
+        at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756) [?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+[18:21:55] [Worker-Main-14/INFO]: Loaded 9 recipes
+[18:22:00] [Worker-Main-14/INFO]: Loaded 2567 advancements
+[18:22:00] [Worker-Main-14/INFO]: Reloading Plugin Manager [REIPlugin] stage [START], registered 3 plugins: DefaultRuntimePlugin, JEITransferHandlerPlugin, DefaultPlugin
+[18:22:00] [Worker-Main-14/INFO]: Reloaded Plugin Manager [REIPlugin] with 2 entry types, 5 item comparators, 0 fluid comparators and 2 fluid support providers in 36ms.
+[18:22:00] [Worker-Main-14/INFO]: Reloading Plugin Manager [REIServerPlugin] stage [START], registered 3 plugins: DefaultRuntimePlugin, JEITransferHandlerPlugin, DefaultPlugin
+[18:22:00] [Worker-Main-14/INFO]: Reloaded Plugin Manager [REIServerPlugin] with 0 menu infos in 4ms.
+[18:22:00] [Worker-Main-14/INFO]: Reloading Plugin Manager [REIPlugin] stage [END], registered 3 plugins: DefaultRuntimePlugin, JEITransferHandlerPlugin, DefaultPlugin
+[18:22:00] [Worker-Main-14/INFO]: Reloaded Plugin Manager [REIPlugin] with 2 entry types, 5 item comparators, 0 fluid comparators and 2 fluid support providers in 56ms.
+[18:22:00] [Worker-Main-14/INFO]: Reloading Plugin Manager [REIServerPlugin] stage [END], registered 3 plugins: DefaultRuntimePlugin, JEITransferHandlerPlugin, DefaultPlugin
+[18:22:00] [Worker-Main-14/INFO]: Reloaded Plugin Manager [REIServerPlugin] with 5 menu infos in 15ms.
+[18:22:04] [main/INFO]: Injecting existing registry data into this CLIENT instance
+[18:22:13] [Server thread/INFO]: Starting minecraft server version 1.17.1
+[18:22:13] [Server thread/INFO]: Loading properties
+[18:22:13] [Server thread/INFO]: Default game type: SURVIVAL
+[18:22:13] [Server thread/INFO]: Generating keypair
+[18:22:13] [Server thread/INFO]: Starting Minecraft server on 192.168.1.3:25565
+[18:22:13] [Server thread/INFO]: Using default channel type
+[18:22:15] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:22:16] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:22:16] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:22:16] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:22:16] [Server thread/INFO]: Loading JourneyMap Forge Configs
+[18:22:16] [Server thread/INFO]: Preparing level "world"
+[18:22:18] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:22:18] [Netty Server IO #1/INFO]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[18:22:19] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[18:22:19] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[18:22:19] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[18:22:21] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[18:22:21] [Worker-Main-14/INFO]: Preparing spawn area: 0%
+[18:22:21] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[18:22:21] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[18:22:21] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[18:22:22] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[18:22:22] [Worker-Main-14/INFO]: Preparing spawn area: 5%
+[18:22:23] [Worker-Main-11/INFO]: Preparing spawn area: 17%
+[18:22:23] [Worker-Main-8/INFO]: Preparing spawn area: 37%
+[18:22:24] [Worker-Main-10/INFO]: Preparing spawn area: 70%
+[18:22:24] [Netty Server IO #2/INFO]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[18:22:25] [Server thread/INFO]: Time elapsed: 6955 ms
+[18:22:25] [Server thread/INFO]: Done (8.734s)! For help, type "help"
+[18:22:25] [Server thread/INFO]: HELLO from server starting
+[18:22:25] [VoiceChatServerThread/INFO]: Server started at port 24454
+[18:22:25] [Server thread/INFO]: event handler is here
+[18:22:25] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@1b65ffc3
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:26] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:27] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2042ms or 40 ticks behind
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
+[18:22:28] [Server thread/INFO]: event handler is here
